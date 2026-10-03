@@ -1,0 +1,1402 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Lorhea Grace M. Villena | Portfolio</title>
+
+
+    <!-- ==============================
+         FONT AWESOME
+    ================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ==============================
+         GOOGLE FONT: MONTSERRAT
+    ================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    >
+
+
+    <!-- ==============================
+         CSS
+    ================================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==============================
+        NAVIGATION
+    ================================= -->
+
+    <header class="navbar">
+
+        <!-- LV LOGO -->
+        <a href="#home" class="logo">
+            <img
+                src="images/icons/lvlogo.png"
+                alt="LV Logo"
+            >
+        </a>
+
+
+        <!-- CENTER NAVIGATION -->
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#tools">Tools</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <!-- BURGER BUTTON -->
+        <button class="menu-toggle" aria-label="Open navigation menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+    <!-- ==============================
+         MAIN CONTENT
+    ================================= -->
+
+    <main>
+
+
+        <!-- ==============================
+             HERO SECTION
+        ================================= -->
+
+        <section class="hero" id="home">
+
+            <!-- ANIMATED WAVE BACKGROUND (pure CSS) -->
+
+            <div class="hero-waves" aria-hidden="true">
+                <div class="wave-layer"><span class="wave"></span></div>
+            </div>
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+                <p class="intro">
+                    HELLO, I'M
+                </p>
+
+
+                <h1>
+                    Lorhea Grace<br>
+                    M. Villena
+                </h1>
+
+
+                <h2>
+                    Technology • Innovation • Problem Solving
+                </h2>
+
+
+                <p class="hero-description">
+Curious by nature and detail-minded by habit, I create technology that is functional, dependable, and built with people in mind.
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#contact"
+                        class="btn btn-primary"
+                    >
+                        Contact Me
+                    </a>
+
+
+                    <a
+                        href="{% static 'documents/Lorhea-Villena-Resume.pdf' %}"
+                        class="btn btn-secondary"
+                        target="_blank"
+                    >
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-image-container">
+
+                <div class="clipboard">
+
+                    <!-- Folder behind the photo -->
+
+                    <div class="clipboard-folder" aria-hidden="true"></div>
+
+
+                    <!-- Profile image -->
+
+                    <div class="image-frame">
+
+                        <img
+                            src="images/profile/villenaherosec.jpg"
+                            alt="Lorhea Grace M. Villena"
+                        >
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="image-decoration" aria-hidden="true"></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+            ABOUT SECTION
+        ================================= -->
+
+        <section class="about-section" id="about">
+
+            <!-- Folder -->
+
+            <div class="about-folder">
+
+                <div class="about-container">
+
+                    <!-- PHOTO STACK: click to flip to the next photo -->
+
+                    <div class="about-image">
+
+                        <div
+                            class="photo-stack"
+                            id="photoStack"
+                            role="button"
+                            tabindex="0"
+                            aria-label="Photos of Lorhea. Activate to show the next photo."
+                        >
+
+                            <img
+                                class="stack-photo"
+                                data-pos="0"
+                                src="images/profile/lorhea01.jpg"
+                                alt="Lorhea Grace M. Villena, photo 1"
+                            >
+
+                            <img
+                                class="stack-photo"
+                                data-pos="1"
+                                src="images/profile/lorhea02.jpg"
+                                alt="Lorhea Grace M. Villena, photo 2"
+                            >
+
+                            <img
+                                class="stack-photo"
+                                data-pos="2"
+                                src="images/profile/lorhea03.jpg"
+                                alt="Lorhea Grace M. Villena, photo 3"
+                            >
+
+                        </div>
+                    </div>
+
+
+                    <div class="about-content">
+
+                        <p class="section-label">
+                            ABOUT ME
+                        </p>
+
+                        <h2>
+                            Building with purpose,
+                            designing with people in mind.
+                        </h2>
+
+                        <p class="section-description">
+I'm a Computer Engineering Technology graduate with a strong interest in technology, innovation, and problem-solving. My experience spans software development, UI/UX design, quality assurance, and PCB design and validation. I enjoy learning how different technologies work, exploring new ideas, and turning them into functional and reliable solutions. I value continuous learning, attention to detail, and the opportunity to contribute to meaningful technology-driven work.
+                    </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- ==============================
+    PROJECTS SECTION
+================================= -->
+
+<section class="projects-section" id="projects">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            SELECTED WORK
+        </p>
+
+        <h2>
+            Featured Projects
+        </h2>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="images/projects/orderingsystem.jpg"
+                        alt="MSME Ordering and Management System"
+                    >
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        FULL-STACK WEB APPLICATION
+                    </span>
+
+                    <h3>
+                        Ordering & Management System
+                        for MSMEs
+                    </h3>
+
+                    <p>
+A customizable and generic ordering system designed for various businesses. It simplifies transactions, reduces manual errors, and improves communication between business owners and their customers. The system can be adapted to different business needs, products, and ordering workflows.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>PostgreSQL</span>
+                        <span>VS Code</span>
+                        <span>Render</span>
+
+                    </div>
+
+                    <a
+                        href="https://makiphotography.my.canva.site/digital-ordering-and-management-system"
+                        class="project-link"
+                        data-project="ordering"
+                        aria-haspopup="dialog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="images/projects/labeqborrow.jpg"
+                        alt="Laboratory Equipment Borrowing System"
+                    >
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        WEB APPLICATION
+                    </span>
+
+                    <h3>
+                        Laboratory Equipment
+                        Borrowing System
+                    </h3>
+
+                    <p>
+A web-based application that streamlines the borrowing and returning of laboratory equipment for students and staff. The system allows users to easily request, track, and manage equipment, while administrators and lab staff can approve requests, update inventory, and generate borrowing reports efficiently.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Web Development</span>
+                        <span>Database</span>
+                        <span>UI/UX</span>
+
+                    </div>
+
+                    <a
+                        href="https://www.youtube.com/watch?v=fqLLZcGy5dU"
+                        class="project-link"
+                        data-project="borrowing"
+                        aria-haspopup="dialog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="images/projects/pcbdesigning.jpg"
+                        alt="PCB Design and Validation"
+                    >
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        PCB DESIGN & VALIDATION
+                    </span>
+
+                    <h3>
+                        LTC 4125 and LT1714 Test Card
+                    </h3>
+
+                    <p>
+Validated and reviewed PCB schematics for test card projects, identified design discrepancies, and prepared detailed discrepancy reports. Collaborated with senior engineers to resolve design issues and implement schematic corrections using Cadence Allegro Design Entry. Executed PCB component placement and routing, reviewed layout designs, and generated Gerber files for manufacturing.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Cadence Allegro</span>
+                        <span>PCB Design</span>
+                        <span>Validation</span>
+
+                    </div>
+
+                    <a
+                        href="#experience"
+                        class="project-link"
+                        data-project="testcard"
+                        aria-haspopup="dialog"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="images/projects/borrowlab.jpg"
+                        alt="BorrowLab Mobile App"
+                    >
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        MOBILE APPLICATION
+                    </span>
+
+                    <h3>
+                        BorrowLab Mobile App
+                    </h3>
+
+                    <p>
+A simple mobile application for laboratory equipment borrowing. Students can easily request and borrow equipment, while lab technicians can manage approvals, track inventory, and monitor borrowing history efficiently. The system helps organize borrowing transactions, improve equipment tracking, and reduce manual record-keeping.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Android Studio</span>
+                        <span>Java</span>
+                        <span>Firebase</span>
+                        <span>UI/UX</span>
+
+                    </div>
+
+                    <a
+                        href="https://makiphotography.my.canva.site/digital-ordering-and-management-system"
+                        class="project-link"
+                        data-project="borrowlab"
+                        aria-haspopup="dialog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==============================
+    TOOLS & TECHNOLOGIES SECTION
+================================= -->
+
+<section class="tools-section" id="tools">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            TOOLS & TECHNOLOGIES
+        </p>
+
+        <h2>
+            Technologies I Work With
+        </h2>
+
+        <div class="tools-grid">
+
+            <!-- CADENCE ALLEGRO -->
+            <div class="tool-item">
+                <img src="images/tools/cadenceallegro.png" alt="Cadence Allegro">
+                <h3>Cadence Allegro</h3>
+                <p>PCB design and layout</p>
+            </div>
+
+            <!-- VISUAL STUDIO CODE -->
+            <div class="tool-item">
+                <img src="images/tools/vscode.png" alt="Visual Studio Code">
+                <h3>Visual Studio Code</h3>
+                <p>Code editing and development</p>
+            </div>
+
+            <!-- ANDROID STUDIO -->
+            <div class="tool-item">
+                <img src="images/tools/androidstudio.png" alt="Android Studio">
+                <h3>Android Studio</h3>
+                <p>Android app development</p>
+            </div>
+
+            <!-- PYTHON -->
+            <div class="tool-item">
+                <img src="images/tools/python.png" alt="Python">
+                <h3>Python</h3>
+                <p>Programming and backend development</p>
+            </div>
+
+            <!-- DJANGO -->
+            <div class="tool-item">
+                <img src="images/tools/django.png" alt="Django">
+                <h3>Django</h3>
+                <p>Web application development</p>
+            </div>
+
+            <!-- HTML -->
+            <div class="tool-item">
+                <img src="images/tools/html.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Web page structure</p>
+            </div>
+
+            <!-- CSS -->
+            <div class="tool-item">
+                <img src="images/tools/css.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Web styling and layout</p>
+            </div>
+
+            <!-- JAVASCRIPT -->
+            <div class="tool-item">
+                <img src="images/tools/javascript.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Interactive web features</p>
+            </div>
+
+            <!-- KOTLIN -->
+            <div class="tool-item">
+                <img src="images/tools/kotlin.png" alt="Kotlin">
+                <h3>Kotlin</h3>
+                <p>Android application development</p>
+            </div>
+
+            <!-- MYSQL -->
+            <div class="tool-item">
+                <img src="images/tools/mysql.png" alt="MySQL">
+                <h3>MySQL</h3>
+                <p>Relational database management</p>
+            </div>
+
+            <!-- POSTGRESQL -->
+            <div class="tool-item">
+                <img src="images/tools/postgresql.png" alt="PostgreSQL">
+                <h3>PostgreSQL</h3>
+                <p>Database management and storage</p>
+            </div>
+
+            <!-- FIGMA -->
+            <div class="tool-item">
+                <img src="images/tools/figma.png" alt="Figma">
+                <h3>Figma</h3>
+                <p>UI/UX design and prototyping</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==============================
+     EMAIL MARKETING SHOWCASE
+================================= -->
+
+<section class="email-showcase-section" id="email-marketing">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            CREATIVE SHOWCASE
+        </p>
+
+        <h2>
+            Designed for the inbox,
+            made to catch attention.
+        </h2>
+
+        <p class="section-description">
+            A collection of email marketing concepts created as
+            passion projects, exploring visual hierarchy, typography,
+            branding, and user-focused design.
+        </p>
+
+
+        <!-- MAIN CAROUSEL -->
+
+        <div class="email-carousel">
+
+            <button
+                class="carousel-button carousel-prev"
+                aria-label="Previous project"
+            >
+                &#10094;
+            </button>
+
+
+            <div class="email-carousel-track">
+
+                <div class="email-slide active">
+
+                    <img
+                        src="images/projects/emailmarketing1.png"
+                        alt="Email marketing project 1"
+                    >
+
+                </div>
+
+
+                <div class="email-slide">
+
+                    <img
+                        src="images/projects/emailmarketing2.png"
+                        alt="Email marketing project 2"
+                    >
+
+                </div>
+
+
+                <div class="email-slide">
+
+                    <img
+                        src="images/projects/emailmarketing3.png"
+                        alt="Email marketing project 3"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="carousel-button carousel-next"
+                aria-label="Next project"
+            >
+                &#10095;
+            </button>
+
+        </div>
+
+
+        <!-- VIEW UPCLOSE BUTTON -->
+
+        <div class="email-upclose-button-wrapper">
+
+            <button
+                type="button"
+                class="email-upclose-button"
+                id="emailUpclose"
+            >
+                View Upclose
+                <span>↗</span>
+            </button>
+
+        </div>
+
+
+        <!-- CAROUSEL INDICATORS -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                class="carousel-dot active"
+                aria-label="View project 1"
+            ></button>
+
+            <button
+                type="button"
+                class="carousel-dot"
+                aria-label="View project 2"
+            ></button>
+
+            <button
+                type="button"
+                class="carousel-dot"
+                aria-label="View project 3"
+            ></button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+    EXPERIENCE SECTION
+================================= -->
+
+<section class="experience-section" id="experience">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            BACKGROUND
+        </p>
+
+        <h2>
+            Experience & Education
+        </h2>
+
+
+        <div class="experience-grid">
+
+
+            <!-- ==============================
+                CARD 1 — WORK EXPERIENCE
+            ================================= -->
+
+            <article class="experience-card">
+
+                <!-- Background Icon -->
+                <i class="fa-solid fa-microchip experience-bg-icon"></i>
+
+
+                <div class="experience-card-top">
+
+                    <span class="experience-number">
+                        01
+                    </span>
+
+                    <span class="experience-date">
+                        2026
+                    </span>
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <span class="experience-type">
+                        WORK EXPERIENCE
+                    </span>
+
+                    <h3>
+                        Printed Circuit Board Designer and Board Validation Intern
+                    </h3>
+
+                    <p class="experience-company">
+                        GP Synergia Technologies Corp.
+                    </p>
+
+                    <p>
+                        Worked with test cards by validating
+                        schematics, preparing discrepancy reports,
+                        coordinating with senior engineers,
+                        correcting schematic and PCB layout issues,
+                        and generating Gerber files for manufacturing.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==============================
+                CARD 2 — TERTIARY EDUCATION
+            ================================= -->
+
+            <article class="experience-card">
+
+                <!-- Background Icon -->
+                <i class="fa-solid fa-gear experience-bg-icon"></i>
+
+
+                <div class="experience-card-top">
+
+                    <span class="experience-number">
+                        02
+                    </span>
+
+                    <span class="experience-date">
+                        2022 — 2026
+                    </span>
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <span class="experience-type">
+                        TERTIARY EDUCATION
+                    </span>
+
+                    <h3>
+                        Bachelor of Engineering Technology Major in Computer Engineering Technology
+                    </h3>
+
+                    <p class="experience-company">
+                        Technological University of the Philippines
+                    </p>
+
+                    <p>
+                        Graduated with Latin honors, completing
+                        academic projects involving web development,
+                        database management, UI/UX design, system
+                        testing, and software development.
+                    </p>
+
+
+                    <span class="experience-honor">
+                        Cum Laude
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==============================
+                CARD 3 — SECONDARY EDUCATION
+            ================================= -->
+
+            <article class="experience-card">
+
+                <!-- Background Icon -->
+                <i class="fa-solid fa-atom experience-bg-icon"></i>
+
+
+                <div class="experience-card-top">
+
+                    <span class="experience-number">
+                        03
+                    </span>
+
+                    <span class="experience-date">
+                        2020 — 2022
+                    </span>
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <span class="experience-type">
+                        SECONDARY EDUCATION
+                    </span>
+
+                    <h3>
+                        Science, Technology, Engineering, and Mathematics Strand
+                    </h3>
+
+                    <p class="experience-company">
+                        University of Perpetual Help System Dalta
+                    </p>
+
+                    <p>
+                        Completed the Science, Technology,
+                        Engineering, and Mathematics strand with
+                        strong academic performance and a focus
+                        on technical and scientific subjects.
+                    </p>
+
+
+                    <span class="experience-honor">
+                        With High Honors
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ==============================
+            TECH MEMORY GAME
+        ================================= -->
+
+        <section class="memory-section" id="memory-game">
+
+            <div class="section-container">
+
+                <!-- INTRO -->
+
+                <div class="memory-intro">
+
+                    <!-- CHARACTER -->
+
+                    <div class="memory-character">
+
+                        <img
+                            src="images/profile/characterthinking.png"
+                            data-alt-src="images/profile/characterthinking2.png"
+                            alt="Character thinking"
+                        >
+
+                    </div>
+
+
+                    <!-- TEXT -->
+
+                    <div class="memory-intro-text">
+
+                        <p class="section-label">
+                            INTERACTIVE
+                        </p>
+
+                        <h2>
+                            Match the <span class="gold-word">technologies</span>.
+                        </h2>
+
+                        <p class="section-description">
+                            A little memory game featuring some of the
+                            technologies I've worked with.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MEMORY GAME -->
+
+                <div class="memory-game">
+
+                    <!-- GAME HEADER -->
+
+                    <div class="memory-header">
+
+                                                <p
+                            class="memory-message"
+                            id="memoryMessage"
+                        >
+                            Find all 8 technology pairs.
+                        </p>
+
+                        <div class="memory-stats">
+
+                            <div class="memory-stat">
+
+                                <span
+                                    class="memory-stat-value"
+                                    id="moves"
+                                >
+                                    0
+                                </span>
+
+                                <span class="memory-stat-label">
+                                    Moves
+                                </span>
+
+                            </div>
+
+
+                            <div class="memory-stat" id="timerStat">
+                                <span
+                                    class="memory-stat-value"
+                                    id="timer"
+                                >
+                                    0:00
+                                </span>
+                                <span class="memory-stat-label">
+                                    Time
+                                </span>
+                            </div>
+
+
+                            <div class="memory-stat">
+
+                                <span
+                                    class="memory-stat-value"
+                                    id="pairs"
+                                >
+                                    0/8
+                                </span>
+
+                                <span class="memory-stat-label">
+                                    Pairs
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GAME BOARD -->
+
+                    <div class="memory-board-wrapper">
+                        <div
+                            class="memory-board"
+                            id="memoryBoard"
+                            data-icon-path="images/tech-icons/"
+                        >
+
+                            <!-- Cards generated by JavaScript -->
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GAME FOOTER -->
+
+                    <div class="memory-footer">
+
+
+                        <button
+                            type="button"
+                            class="memory-reset"
+                            id="memoryReset"
+                        >
+                            Restart Game
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+            CONTACT SECTION
+        ================================= -->
+
+        <section class="contact-section" id="contact">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's build something
+                    meaningful.
+                </h2>
+
+                <p>
+                    I'm open to opportunities, collaborations,
+                    and projects where I can continue learning
+                    while contributing my skills.
+                </p>
+
+
+                <!-- CONTACT LINKS -->
+
+                <div class="contact-links">
+
+                    <a
+                        href="mailto:lorheagrace@gmail.com"
+                        class="contact-link"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/lorhea-grace-villena-a3811332a/"
+                        class="contact-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+
+
+                    <a
+                        href="https://github.com/lorheagrace"
+                        class="contact-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Lorhea Grace M. Villena.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+
+
+
+        <!-- ==============================
+            EMAIL UPCLOSE MODAL
+        ================================= -->
+
+        <div
+            class="email-modal"
+            id="emailModal"
+            aria-hidden="true"
+        >
+
+            <div class="email-modal-overlay"></div>
+
+
+            <div
+                class="email-modal-content"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Email marketing preview"
+            >
+
+                <!-- MODAL HEADER -->
+
+                <div class="email-modal-header">
+
+                    <div>
+
+                        <span class="email-modal-label">
+                            EMAIL PREVIEW
+                        </span>
+
+                        <span
+                            class="email-modal-counter"
+                            id="emailModalCounter"
+                        >
+                            01 / 03
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="email-modal-close"
+                        id="emailModalClose"
+                        aria-label="Close preview"
+                    >
+                        &times;
+                    </button>
+
+                </div>
+
+
+                <!-- EMAIL VIEWER -->
+
+                <div class="email-modal-viewer">
+
+                    <div class="email-modal-track">
+
+
+                        <!-- EMAIL 1 -->
+
+                        <div class="email-modal-slide active">
+
+                            <img
+                                src="images/projects/upc1.png"
+                                alt="Email marketing project 1 close-up"
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL 2 -->
+
+                        <div class="email-modal-slide">
+
+                            <img
+                                src="images/projects/upc2.png"
+                                alt="Email marketing project 2 close-up"
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL 3 -->
+
+                        <div class="email-modal-slide">
+
+                            <img
+                                src="images/projects/upc3.png"
+                                alt="Email marketing project 3 close-up"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MODAL NAVIGATION -->
+
+                <div class="email-modal-navigation">
+
+                    <button
+                        type="button"
+                        class="email-modal-nav email-modal-prev"
+                        id="emailModalPrev"
+                    >
+                        <span>←</span>
+                        Previous
+                    </button>
+
+
+                    <span
+                        class="email-modal-title"
+                        id="emailModalTitle"
+                    >
+                        Email Concept 01
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="email-modal-nav email-modal-next"
+                        id="emailModalNext"
+                    >
+                        Next
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    <!-- ==============================
+         MEMORY GAME: ALL PAIRS MATCHED POPUP
+    ================================= -->
+
+    <div class="memory-win" id="memoryWin" aria-hidden="true">
+
+        <div class="memory-win-overlay"></div>
+
+        <div
+            class="memory-win-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="memoryWinTitle"
+        >
+
+            <div class="memory-win-image">
+                <img
+                    src="images/profile/matchedpairs.png"
+                    alt="All technology pairs matched"
+                >
+            </div>
+
+            <div class="memory-win-info">
+
+                <p class="memory-win-eyebrow">ALL PAIRS MATCHED</p>
+
+                <h3 class="memory-win-title" id="memoryWinTitle">
+                    Great job!
+                </h3>
+
+                <div class="memory-win-stats">
+
+                    <div class="memory-win-stat">
+                        <span class="memory-win-value" id="winTime">0:00</span>
+                        <span class="memory-win-label">Time</span>
+                    </div>
+
+                    <div class="memory-win-stat">
+                        <span class="memory-win-value" id="winMoves">0</span>
+                        <span class="memory-win-label">Moves</span>
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="memory-win-retry"
+                    id="memoryWinRetry"
+                >
+                    Try Again
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==============================
+         PROJECT MODAL
+    ================================= -->
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+
+        <div class="project-modal-overlay" id="projectModalOverlay"></div>
+
+        <div
+            class="project-modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="projectModalTitle"
+        >
+
+            <div class="project-modal-header">
+
+                <span class="project-modal-label">PROJECT</span>
+
+                <button
+                    type="button"
+                    class="project-modal-close"
+                    id="projectModalClose"
+                    aria-label="Close project details"
+                >
+                    &times;
+                </button>
+
+            </div>
+
+            <h3 class="project-modal-title" id="projectModalTitle"></h3>
+
+            <div class="project-modal-body" id="projectModalBody"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
