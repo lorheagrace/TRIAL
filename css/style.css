@@ -5190,3 +5190,150 @@ body.memory-win-open {
 @media (prefers-reduced-motion: reduce) {
     .contact-section { animation: none; }
 }
+
+
+/* ==============================================================
+   REQUESTED UPDATES
+================================================================= */
+
+
+/* ---------- NAV LINKS: ALL CAPS ---------- */
+
+.nav-links a {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+
+/* ---------- NAV LOGO: BLACK GLOW ---------- */
+
+.logo img {
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.95))
+            drop-shadow(0 0 14px rgba(0, 0, 0, 0.75));
+}
+
+.logo:hover img {
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.95))
+            drop-shadow(0 0 14px rgba(0, 0, 0, 0.75))
+            drop-shadow(0 0 8px rgba(198, 40, 53, 0.6));
+}
+
+
+/* ---------- DOWNLOAD RESUME: GOLD ON HOVER ---------- */
+
+.btn-secondary:hover {
+    color: #d9b46a;
+    border-color: #d9b46a;
+    background: rgba(217, 180, 106, 0.10);
+    box-shadow: 0 10px 30px rgba(217, 180, 106, 0.22);
+}
+
+
+/* ---------- CREATIVE SHOWCASE: TIGHTER GAP UNDER CAROUSEL ---------- */
+/* tweak --showcase-gap-pull to tighten (more negative) or loosen (closer to 0) */
+
+.email-showcase-section {
+    --showcase-gap-pull: -45px;
+}
+
+.email-upclose-button-wrapper {
+    margin-top: var(--showcase-gap-pull);
+}
+
+.carousel-indicators {
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .email-showcase-section { --showcase-gap-pull: -35px; }
+}
+
+@media (max-width: 600px) {
+    .email-showcase-section { --showcase-gap-pull: -25px; }
+}
+
+
+/* ---------- BACKGROUND ICONS: SLOW SPIN + GROW / SHRINK LOOP ---------- */
+
+.experience-card:nth-child(1) .experience-bg-icon { --icon-rot: -8deg; }
+.experience-card:nth-child(2) .experience-bg-icon { --icon-rot: -10deg; }
+.experience-card:nth-child(3) .experience-bg-icon { --icon-rot: 8deg; }
+
+.experience-bg-icon {
+    animation:
+        iconSpin 30s linear infinite,
+        iconPulse 8s ease-in-out infinite;
+}
+
+.experience-card:hover .experience-bg-icon {
+    animation:
+        iconSpin 30s linear infinite,
+        iconPulse 8s ease-in-out infinite;
+}
+
+@keyframes iconSpin {
+    from { transform: rotate(var(--icon-rot, 0deg)); }
+    to   { transform: rotate(calc(var(--icon-rot, 0deg) + 360deg)); }
+}
+
+@keyframes iconPulse {
+    0%, 100% { scale: 1; }
+    50%      { scale: 1.22; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .experience-bg-icon,
+    .experience-card:hover .experience-bg-icon { animation: none; }
+}
+
+
+/* ---------- INTERACTIVE: RESTART LEFT, STATS RIGHT, LABEL BELOW GRID ---------- */
+
+.memory-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.memory-header .memory-reset {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.memory-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.memory-footer .memory-message {
+    flex: 0 1 auto;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .memory-header { gap: 8px; }
+
+    .memory-stats { gap: 5px; }
+
+    .memory-stat {
+        min-width: 0;
+        padding: 8px 9px;
+    }
+
+    .memory-stat-value { font-size: 14px; }
+
+    .memory-header .memory-reset {
+        padding: 9px 12px;
+    }
+
+    .memory-footer {
+        flex-direction: row;
+        align-items: center;
+    }
+}
