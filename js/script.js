@@ -1700,32 +1700,32 @@ document.addEventListener("DOMContentLoaded", function () {
             return link;
         }
 
-        function buildDemo(videoId, title) {
-            const fragment = document.createDocumentFragment();
+    function buildDemo(videoId, title) {
+        const fragment = document.createDocumentFragment();
 
-            fragment.appendChild(
-                make("p", "project-modal-section", "Demo")
-            );
+        fragment.appendChild(
+            make("p", "project-modal-section", "Demo")
+        );
 
-            const wrapper = make("div", "project-modal-video");
-            const frame = document.createElement("iframe");
+        const wrapper = make("div", "project-modal-video");
+        const frame = document.createElement("iframe");
 
-            frame.src =
-                "https://www.youtube.com/embed/" + videoId +
-                "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+        frame.src =
+            "https://www.youtube.com/embed/" + videoId +
+            "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
 
-            frame.title = title + " demo video";
+        frame.title = title + " demo video";
 
-            frame.allow =
-                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        frame.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
 
-            frame.allowFullscreen = true;
+        frame.allowFullscreen = true;
 
-            wrapper.appendChild(frame);
-            fragment.appendChild(wrapper);
+        wrapper.appendChild(frame);
+        fragment.appendChild(wrapper);
 
-            return fragment;
-        }
+        return fragment;
+    }
 
         function buildActions(project) {
             const actions = make("div", "project-modal-actions");
